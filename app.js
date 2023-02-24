@@ -7,6 +7,9 @@ require('dotenv').config();
 //middleware
 app.use(express.json());
 
+//serve static files
+app.use(express.static('./public'));
+
 //routes
 app.use('/api/v1/tasks', tasks);
 
